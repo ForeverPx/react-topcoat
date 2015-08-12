@@ -29,7 +29,7 @@ var Button = React.createClass({
             text:text
         });
     },
-    handleClick() {
+    handleClick:function() {
         if (this.props.onClick) {
             this.props.onClick()
         }
