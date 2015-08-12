@@ -2,7 +2,7 @@
  * Created by panxiao on 15/8/12.
  * Button elemnt
  */
-var Asd = React.createClass({
+var Button = React.createClass({
     propTypes:{
         children: React.PropTypes.any,
         className: React.PropTypes.string,
