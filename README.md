@@ -1,2 +1,2 @@
 # react-topcoat
-react versioin of topcoat
+一个基于Topcoat样式的ReactUI库
