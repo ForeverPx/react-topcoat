@@ -33,6 +33,7 @@ var SearchButton = React.createClass({
                    placeholder='search'
                    onInput={this.handleInput.bind(this)}
                    className={sizeClasss}
+                   disabled={this.props.disabled}
                 />
         );
     }
