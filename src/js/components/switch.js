@@ -3,7 +3,7 @@
  */
 var Switch = React.createClass({
     propTypes:{
-        onClick: React.PropTypes.func,
+        onChange: React.PropTypes.func,
         disabled: React.PropTypes.bool,
         initState: React.PropTypes.bool
     },
@@ -17,7 +17,9 @@ var Switch = React.createClass({
         this.setState({
             initState: value
         });
-        this.props.onChange(value);
+        if(this.props.onChange){
+            this.props.onChange(value);
+        }
     },
     render: function(){
         return (
