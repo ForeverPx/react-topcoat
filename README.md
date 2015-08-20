@@ -120,7 +120,7 @@ params:
  - *labelSide*: 'left' or 'right', default 'left'
  - *disabled*: true or false , default false
  - *checked*: true of false , default false
- -  - *onChange*: function (state){ alert(state); }  //state 为当前radio的状态
+ - *onChange*: function (state){ alert(state); }  //state 为当前radio的状态
 
 examples:
 ```js
@@ -132,4 +132,28 @@ React.render(
     ></Radio>
     , document.getElementById('container'));
 ```
+
+----------
+
+**6.SearchInput**
+
+params:
+ - *size*: '' or 'large', default 'large'
+ - *onInput*: function (inputValue){...}
+ - *delay*: time to delay search, default 300ms
+ - *disabled*: true or false , default false
+
+examples:
+```js
+React.render(
+    <SearchInput size='large'
+            disabled={true}
+            delay=500
+            onInput={function (inputValue){...}}
+    ></SearchInput>
+    , document.getElementById('container'));
+```
+
+----------
+
  
