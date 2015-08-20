@@ -156,4 +156,19 @@ React.render(
 
 ----------
 
+**7.Switch**
+
+params:
+ - *onChange*: function (state //true or false){...}
+ - *disabled*: true or false , default false
+ - *initState*: true of false , default false
  
+examples:
+```js
+React.render(
+    <Switch initState={true}
+            disabled={true}
+            onChange={function (state){...}}
+    ></Switch>
+    , document.getElementById('container'));
+```
