@@ -3,6 +3,8 @@
 
 [Topcoat官网](http://topcoat.io/topcoat/)
 
+组件和文档在持续更新中…………
+
 #Guide
 
 **1.Button**
@@ -15,7 +17,7 @@ params:
  - *type*: submit or button , default button
 
 function:
- - text('click') : 设置button的text为'click'
+text('click') : 设置button的text为'click'
  
 example:
 ```js
@@ -27,6 +29,9 @@ example:
         ></Button>
         , document.getElementById('container'));
 ```
+
+
+----------
 
 **2.ButtonBar**
 
@@ -40,6 +45,7 @@ type=0, 每个按钮点击后就弹起
 type=1, 单选模式，只有一个按钮会被按下。
 type=2, 多选模式，可以同时按下所有按钮。
 
+example:
 ```js
 var buttons = [{
     text:'1',
@@ -60,3 +66,29 @@ React.render(
         , document.getElementById('container'));
 
 ```
+
+**3.CheckBox**
+
+params:
+ - *disabled*: true or false , default false
+ - *text*: checkbox's text , default ''
+ - *id*: checkbox's uid
+ - *checked*: true of false , default false
+ - *value*: checkbox's value , dafault ''
+ - *onChange*: function (state){ alert(state); }  //state 为当前checkbox的状态
+
+example:
+```js
+React.render(
+    <Button disabled={true}
+            text='age'
+            id='checkbox-1'
+            value='19'
+            checked={false}
+            onChange={function (state){ alert(state); }}
+    ></Button>
+    , document.getElementById('container'));
+```
+ 
+
+ 
