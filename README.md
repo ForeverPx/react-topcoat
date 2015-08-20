@@ -67,6 +67,8 @@ React.render(
 
 ```
 
+----------
+
 **3.CheckBox**
 
 params:
