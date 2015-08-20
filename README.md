@@ -91,6 +91,25 @@ React.render(
     ></Button>
     , document.getElementById('container'));
 ```
- 
 
+----------
+
+**4.IconButton**
+
+params:
+ - *disabled*: true or false , default false
+ - *iconClassName*:  you can use font-awesome here, default 'topcoat-icon'
+ - *onClick*: function (){...}
+ - *id*: uid of element
+
+examples:
+```js
+React.render(
+    <IconButton iconClassName='icon-eat'
+            id='icon-1'
+            onClick={function (){...}}
+    ></IconButton>
+    , document.getElementById('container'));
+```
+ 
  
