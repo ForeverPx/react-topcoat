@@ -15,7 +15,7 @@ params:
  - *type*: submit or button , default button
 
 function:
-text('click') : 设置button的text为'click'
+ - text('click') : 设置button的text为'click'
  
 example:
 ```js
