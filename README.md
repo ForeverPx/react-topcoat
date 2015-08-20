@@ -27,3 +27,36 @@ example:
         ></Button>
         , document.getElementById('container'));
 ```
+
+**2.ButtonBar**
+
+params:
+ - *buttons*: type Array, see example
+ - *size*: '' or 'large', default ''
+ - *type*: 0 or 1 or 2, default 0
+
+关于type参数: 
+type=0, 每个按钮点击后就弹起
+type=1, 单选模式，只有一个按钮会被按下。
+type=2, 多选模式，可以同时按下所有按钮。
+
+```js
+var buttons = [{
+    text:'1',
+    click: function(){alert(1)}
+},{
+    text:'2',
+    click: function(){alert(2)}
+},{
+    text:'3',
+    click: function(){alert(3)}
+}]
+
+React.render(
+        <ButtonBar size='large'
+                type=1
+                buttons={buttons}
+        ></ButtonBar>
+        , document.getElementById('container'));
+
+```
