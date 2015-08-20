@@ -111,5 +111,25 @@ React.render(
     ></IconButton>
     , document.getElementById('container'));
 ```
- 
+
+----------
+
+**5.Radio**
+
+params:
+ - *labelSide*: 'left' or 'right', default 'left'
+ - *disabled*: true or false , default false
+ - *checked*: true of false , default false
+ -  - *onChange*: function (state){ alert(state); }  //state 为当前radio的状态
+
+examples:
+```js
+React.render(
+    <Radio labelSide='right'
+            disabled={true}
+            checked={true}
+            onChange={function (state){...}}
+    ></Radio>
+    , document.getElementById('container'));
+```
  
