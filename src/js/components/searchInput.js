@@ -1,7 +1,7 @@
 /**
  * Created by panxiao on 15/8/13.
  */
-var SearchButton = React.createClass({
+var SearchInput = React.createClass({
     inputTimeout:null,
     propTypes:{
         size: React.PropTypes.string,

@@ -3,6 +3,7 @@
  */
 var IconButton = React.createClass({
     propTypes:{
+        id: React.PropTypes.string,
         children: React.PropTypes.any,
         onClick: React.PropTypes.func,
         disabled: React.PropTypes.bool,
@@ -13,7 +14,7 @@ var IconButton = React.createClass({
     },
     render: function(){
         return (
-            <button onClick={this.handleClick.bind(this)} className="topcoat-icon-button" disabled={this.props.disabled}>
+            <button id={this.props.id} onClick={this.handleClick.bind(this)} className="topcoat-icon-button" disabled={this.props.disabled}>
                 <span className={this.props.iconClassName || 'topcoat-icon'} style={{backgroundColor:'#A5A7A7'}}></span>
             </button>
         );
