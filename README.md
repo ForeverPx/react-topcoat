@@ -190,7 +190,8 @@ examples:
 React.render(
     <Input size="large" 
             pattern="name" 
-            type="text"                                             onInput={function(v){console.log(v)}}>
+            type="text"                                             
+            onInput={function(v){console.log(v)}}>
             </Input>
     , document.getElementById('container'));
 ```
