@@ -172,3 +172,25 @@ React.render(
     ></Switch>
     , document.getElementById('container'));
 ```
+
+----------
+
+**8.Input**
+
+params:
+ - *onInput*: function (value //value of input){...}
+ - *size*: '' or large , default ''
+ - *pattern*: 当type为text时的正则，不匹配时input框变红
+ - *placeholder*: placeholder
+ - *type*: 'email','text','url','number'
+ - *disabled*: true or false , default false
+ 
+examples:
+```js
+React.render(
+    <Input size="large" 
+            pattern="name" 
+            type="text"                                             onInput={function(v){console.log(v)}}>
+            </Input>
+    , document.getElementById('container'));
+```
